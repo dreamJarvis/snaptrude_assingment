@@ -18,14 +18,14 @@ const RenderMap = (props) => {
 	const map = useRef(null);
 	const [lng, setLng] = useState(28.7041);
 	const [lat, setLat] = useState(77.1025);
-	const [zoom, setZoom] = useState(9);
+	const [zoom, setZoom] = useState(2.63);
 
 	useEffect(() => {
 		if (map.current) return; // initialize map only once
 		map.current = new mapboxgl.Map({
 			container: mapContainer.current,
 			style: "mapbox://styles/mapbox/streets-v12",
-			center: [lat, lng],
+			center: [lng, lat],
 			zoom: zoom,
 			preserveDrawingBuffer: true,
 		});
