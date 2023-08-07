@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/snaptrude_assingment/static/css/main.12998486.css",
+    "main.js": "/snaptrude_assingment/static/js/main.92b88aca.js",
+    "index.html": "/snaptrude_assingment/index.html",
+    "main.12998486.css.map": "/snaptrude_assingment/static/css/main.12998486.css.map",
+    "main.92b88aca.js.map": "/snaptrude_assingment/static/js/main.92b88aca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12998486.css",
+    "static/js/main.92b88aca.js"
+  ]
+}
