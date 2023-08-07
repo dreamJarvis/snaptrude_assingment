@@ -25,7 +25,7 @@ const RenderMap = (props) => {
 		map.current = new mapboxgl.Map({
 			container: mapContainer.current,
 			style: "mapbox://styles/mapbox/streets-v12",
-			center: [lng, lat],
+			center: [lat, lng],
 			zoom: zoom,
 			preserveDrawingBuffer: true,
 		});
