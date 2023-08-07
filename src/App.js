@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+import React, { useState, useEffect } from "react";
+import "mapbox-gl/dist/mapbox-gl.css";
+import RenderMap from "./components/RenderMap";
+import ReactCanvas from "./components/ReactCanvas";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [mapAttributes, setMapAttributes] = useState({});
+	const [open, setOpen] = React.useState(false);
+
+	useEffect(() => {}, [mapAttributes, open]);
+
+	return (
+		<div className='container'>
+			<RenderMap setMapAttributes={setMapAttributes} setOpen={setOpen} />
+			{open && <ReactCanvas mapAttributes={mapAttributes} />}
+		</div>
+	);
 }
 
 export default App;
+
+/* 
+
+*/
