@@ -5,7 +5,10 @@ import RenderMap from "./components/RenderMap";
 import ReactCanvas from "./components/ReactCanvas";
 
 function App() {
-	const [mapAttributes, setMapAttributes] = useState({});
+	const [mapAttributes, setMapAttributes] = useState({
+		longitude: 28.7041,
+		latitude: 77.1025,
+	});
 	const [open, setOpen] = React.useState(false);
 
 	useEffect(() => {}, [mapAttributes, open]);
